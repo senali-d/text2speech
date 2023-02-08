@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FlaskTest</title>
+  <style>
+    body {
+      background: #D4EFDF;
+    }
+    h1 {
+      color: #1B4F72;
+      text-align: center;
+    }
+    .form {
+      padding: 20px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      color: #1B4F72;
+    }
+    input {
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button {
+      padding: 10px 30px;
+      max-width: 200px;
+      display: flex;
+      margin: 10px auto;
+      background: #1B4F72;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+	<h1>Text to Speech</h2>
+  <form class="form" id="speech-form" method="post">
+    <div class="field">
+      <label for="speech">Type Something convert to voice</label>
+      <input type="text" name="speech" id="speech" required />
+    </div>
+    <button>
+      Say
+    </button>
+  </form>
+</body>
+
+</html>
