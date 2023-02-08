@@ -7,6 +7,9 @@
     body {
       background: #D4EFDF;
     }
+    .main {
+      min-height: calc(100vh - 80px);
+    }
     h1 {
       color: #1B4F72;
       text-align: center;
@@ -25,7 +28,7 @@
     label {
       color: #1B4F72;
     }
-    input {
+    textarea {
       padding: 10px;
       margin-top: 10px;
     }
@@ -39,20 +42,49 @@
       border-radius: 5px;
       color: white;
     }
+    footer {
+      height: 50px;
+    }
+    .footer-wrapper {
+      margin: 0 auto;
+      max-width: 1080px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+    span {
+      color: #1B4F72;
+    }
+    a {
+      color: #0E6655;
+    }
   </style>
 </head>
 
 <body>
-	<h1>Text to Speech</h2>
-  <form class="form" id="speech-form" method="post">
-    <div class="field">
-      <label for="speech">Type Something convert to voice</label>
-      <input type="text" name="speech" id="speech" required />
+  <div class="main">
+    <h1>Text to Speech</h2>
+    <form class="form" id="speech-form" method="post">
+      <div class="field">
+        <label for="speech">Type Something convert to voice</label>
+        <textarea name="speech" id="speech" rows=4 required></textarea>
+      </div>
+      <button>
+        Say
+      </button>
+    </form>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      <span>© 2023 <a href="/">Text2Speech</a>. All Rights Reserved.</span>
+      <div>
+        <a href="https://github.com/senali-d/text2speech" target="_blank" rel="noreferrer">
+          Github
+        </a>
+      </div>
     </div>
-    <button>
-      Say
-    </button>
-  </form>
+  </footer>
 </body>
 
 </html>
